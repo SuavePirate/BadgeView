@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadgeView.iOS", "src\BadgeV
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadgeView.Android", "src\BadgeView.Android\BadgeView.Android.csproj", "{3EBD328D-2BDA-4D56-9685-825DCB7828B6}"
 EndProject
+Project("{5DD5E4FA-CB73-4610-85AB-557B54E96AA9}") = "BadgeView.Nuget", "src\BadgeView.Nuget\BadgeView.Nuget.nuproj", "{193E088D-D09F-4F85-A455-DE46347C61D8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,18 @@ Global
 		{3EBD328D-2BDA-4D56-9685-825DCB7828B6}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{3EBD328D-2BDA-4D56-9685-825DCB7828B6}.Debug|iPhone.ActiveCfg = Debug|Any CPU
 		{3EBD328D-2BDA-4D56-9685-825DCB7828B6}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{193E088D-D09F-4F85-A455-DE46347C61D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{193E088D-D09F-4F85-A455-DE46347C61D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{193E088D-D09F-4F85-A455-DE46347C61D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{193E088D-D09F-4F85-A455-DE46347C61D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{193E088D-D09F-4F85-A455-DE46347C61D8}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{193E088D-D09F-4F85-A455-DE46347C61D8}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{193E088D-D09F-4F85-A455-DE46347C61D8}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{193E088D-D09F-4F85-A455-DE46347C61D8}.Release|iPhone.Build.0 = Release|Any CPU
+		{193E088D-D09F-4F85-A455-DE46347C61D8}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{193E088D-D09F-4F85-A455-DE46347C61D8}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{193E088D-D09F-4F85-A455-DE46347C61D8}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{193E088D-D09F-4F85-A455-DE46347C61D8}.Debug|iPhone.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{29B17DB3-1B94-4887-8700-BA7ABDC58E50} = {D441BD1A-C335-4E32-881D-900113EFB70D}
@@ -107,5 +121,6 @@ Global
 		{3D5011FE-3496-4594-AAA6-08F3CDCE33D6} = {DCBE8DA3-FFF2-4F20-B16B-C4AB7036CC9A}
 		{E4B37C1B-BEC4-4032-9CE0-CBBC805786FB} = {DCBE8DA3-FFF2-4F20-B16B-C4AB7036CC9A}
 		{3EBD328D-2BDA-4D56-9685-825DCB7828B6} = {DCBE8DA3-FFF2-4F20-B16B-C4AB7036CC9A}
+		{193E088D-D09F-4F85-A455-DE46347C61D8} = {DCBE8DA3-FFF2-4F20-B16B-C4AB7036CC9A}
 	EndGlobalSection
 EndGlobal

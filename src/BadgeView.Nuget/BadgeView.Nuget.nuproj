@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.props" Condition="Exists('$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{193E088D-D09F-4F85-A455-DE46347C61D8}</ProjectGuid>
+    <Description>A simple Xamarin.Forms BadgeView to use anywhere in your application. Change the color and apply a number to the badge. That's it!</Description>
+    <PackageId>BadgeView</PackageId>
+    <PackageVersion>2017.10.17</PackageVersion>
+    <Authors>SuavePirate</Authors>
+    <DevelopmentDependency>false</DevelopmentDependency>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>BadgeView.Nuget</RootNamespace>
+    <UsePartialTypes>false</UsePartialTypes>
+    <AssemblyName>BadgeView.Nuget</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <Owners>SuavePirate</Owners>
+    <PackageTags>Xamarin.Forms BadgeView Badge</PackageTags>
+    <Title>BadgeView</Title>
+    <PackageReleaseNotes>Initial Release</PackageReleaseNotes>
+    <Summary>A simple Xamarin.Forms BadgeView to use anywhere in your application.</Summary>
+    <PackageProjectUrl>https://github.com/SuavePirate/BadgeView</PackageProjectUrl>
+    <PackageIconUrl>https://alexdunndev.files.wordpress.com/2017/03/xamagonbadge.png?w=609&amp;h=510&amp;crop=1</PackageIconUrl>
+    <PackageLicenseUrl>https://github.com/SuavePirate/BadgeView/blob/master/LICENSE</PackageLicenseUrl>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <OutputPath>bin\Debug</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="NuGet.Build.Packaging">
+      <Version>0.2.0</Version>
+      <PrivateAssets>All</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BadgeView.Android\BadgeView.Android.csproj">
+      <Project>{3EBD328D-2BDA-4D56-9685-825DCB7828B6}</Project>
+      <Name>BadgeView.Android</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BadgeView.iOS\BadgeView.iOS.csproj">
+      <Project>{E4B37C1B-BEC4-4032-9CE0-CBBC805786FB}</Project>
+      <Name>BadgeView.iOS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
+  <Import Project="$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.targets" Condition="Exists('$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.targets')" />
+</Project>
