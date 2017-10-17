@@ -40,3 +40,7 @@ var badge = new BadgeView()
 
 Check out my blog post on how to build your own if you want! 
 https://alexdunn.org/2017/03/15/xamarin-controls-badgeview/
+
+## TODO
+
+- Add UWP Support
