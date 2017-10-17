@@ -50,6 +50,10 @@
       <Project>{E4B37C1B-BEC4-4032-9CE0-CBBC805786FB}</Project>
       <Name>BadgeView.iOS</Name>
     </ProjectReference>
+    <ProjectReference Include="..\BadgeView.Shared\BadgeView.Shared.csproj">
+      <Project>{3D5011FE-3496-4594-AAA6-08F3CDCE33D6}</Project>
+      <Name>BadgeView.Shared</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
   <Import Project="$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.targets" Condition="Exists('$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.targets')" />
