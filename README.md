@@ -44,3 +44,10 @@ https://alexdunn.org/2017/03/15/xamarin-controls-badgeview/
 ## TODO
 
 - Add UWP Support
+
+## Sponsor
+
+<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/JvDSfZ39KwEWLYqSChESgBc9/SuavePirate/BadgeView'>
+  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/JvDSfZ39KwEWLYqSChESgBc9/SuavePirate/BadgeView.svg' />
+</a>
+
