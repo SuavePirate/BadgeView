@@ -12,6 +12,18 @@ namespace BadgeView.Shared
             view.BadgeLabel.Text = (string)newVal;
         });
 
+        public static BindableProperty TextColorProperty = BindableProperty.Create("TextColor", typeof(Color), typeof(BadgeView), Color.White, propertyChanged: (bindable, oldVal, newVal) =>
+        {
+            var view = (BadgeView)bindable;
+            view.BadgeLabel.TextColor = (Color)newVal;
+        });
+
+        public static BindableProperty FontFamilyProperty = BindableProperty.Create("FontFamily", typeof(string), typeof(BadgeView), Label.FontFamilyProperty.DefaultValue, propertyChanged: (bindable, oldVal, newVal) =>
+        {
+            var view = (BadgeView)bindable;
+            view.BadgeLabel.FontFamily = (string)newVal;
+        });
+
         public static BindableProperty BadgeColorProperty = BindableProperty.Create("BadgeColor", typeof(Color), typeof(BadgeView), Color.Blue, propertyChanged: (bindable, oldVal, newVal) =>
         {
             var view = (BadgeView)bindable;
@@ -29,6 +41,31 @@ namespace BadgeView.Shared
                 SetValue(TextProperty, value);
             }
         }
+
+        public Color TextColor
+        {
+            get
+            {
+                return (Color)GetValue(TextColorProperty);
+            }
+            set
+            {
+                SetValue(TextColorProperty, value);
+            }
+        }
+
+        public string FontFamily
+        {
+            get
+            {
+                return (string)GetValue(FontFamilyProperty);
+            }
+            set
+            {
+                SetValue(FontFamilyProperty, value);
+            }
+        }
+
         public Color BadgeColor
         {
             get
@@ -40,10 +77,13 @@ namespace BadgeView.Shared
                 SetValue(BadgeColorProperty, value);
             }
         }
+
         public BadgeView()
         {
             InitializeComponent();
             BadgeLabel.Text = Text;
+            BadgeLabel.TextColor = TextColor;
+            BadgeLabel.FontFamily = FontFamily;
             BadgeCircle.BackgroundColor = BadgeColor;
         }
     }
