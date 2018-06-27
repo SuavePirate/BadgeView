@@ -3,7 +3,14 @@
     <ContentPage.Content>
         <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
             <Label HorizontalTextAlignment="Center" Text="Look at me!" />
-            <badge:BadgeView Text="3" BadgeColor="Green" VerticalOptions="Center" HorizontalOptions="End" />
+            <badge:BadgeView Text="3" BadgeColor="Green" TextColor="Yellow" VerticalOptions="Center" HorizontalOptions="End">
+                <badge:BadgeView.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="Android" Value="sans-serif-thin" />
+                        <On Platform="iOS" Value="Courier-Bold" />
+                    </OnPlatform>
+                </badge:BadgeView.FontFamily>
+            </badge:BadgeView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
