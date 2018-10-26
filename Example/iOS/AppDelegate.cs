@@ -13,9 +13,9 @@ namespace BadgeViewExample.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
-            CircleViewRenderer.Initialize();
             LoadApplication(new App());
 
+            CircleViewRenderer.Initialize();
             return base.FinishedLaunching(app, options);
         }
     }

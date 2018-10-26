@@ -1,4 +1,5 @@
 ﻿using System;
+using Android.Content;
 using Android.Graphics;
 using Android.Util;
 using BadgeView.Android;
@@ -15,6 +16,12 @@ namespace BadgeView.Android
         private RectF _bounds;
         private Path _path;
         public static void Initialize() { }
+
+        public CircleViewRenderer(Context context) : base(context)
+        {
+
+        }
+
         protected override void OnElementChanged(ElementChangedEventArgs<BoxView> e)
         {
             base.OnElementChanged(e);
@@ -25,7 +32,7 @@ namespace BadgeView.Android
             }
             var element = (CircleView)Element;
 
-            _cornerRadius = TypedValue.ApplyDimension(ComplexUnitType.Dip, (float)element.CornerRadius, Context.Resources.DisplayMetrics);
+            _cornerRadius = TypedValue.ApplyDimension(ComplexUnitType.Dip, (float)element.BadgeCornerRadius, Context.Resources.DisplayMetrics);
 
         }
 

@@ -250,3 +250,9 @@ paket-files/
 # JetBrains Rider
 .idea/
 *.sln.iml
+
+# mFractor
+.mfractor/
+
+# MacOs
+.DS_Store
