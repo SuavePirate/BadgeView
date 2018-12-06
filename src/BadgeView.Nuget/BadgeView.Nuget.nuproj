@@ -37,22 +37,22 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="NuGet.Build.Packaging">
-      <Version>0.2.0</Version>
+      <Version>0.2.2</Version>
       <PrivateAssets>All</PrivateAssets>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BadgeView.Android\BadgeView.Android.csproj">
-      <Project>{3EBD328D-2BDA-4D56-9685-825DCB7828B6}</Project>
-      <Name>BadgeView.Android</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\BadgeView.iOS\BadgeView.iOS.csproj">
-      <Project>{E4B37C1B-BEC4-4032-9CE0-CBBC805786FB}</Project>
-      <Name>BadgeView.iOS</Name>
-    </ProjectReference>
     <ProjectReference Include="..\BadgeView.Shared\BadgeView.Shared.csproj">
       <Project>{3D5011FE-3496-4594-AAA6-08F3CDCE33D6}</Project>
       <Name>BadgeView.Shared</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BadgeView.iOS\BadgeView.iOS.csproj">
+      <Project>{5B38BD8B-9E98-449C-B86F-EE305A0A5AE2}</Project>
+      <Name>BadgeView.iOS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BadgeView.Android\BadgeView.Android.csproj">
+      <Project>{1CA25F7C-F44D-4A73-B71E-B3D7E628A37E}</Project>
+      <Name>BadgeView.Android</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />

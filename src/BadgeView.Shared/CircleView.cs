@@ -5,14 +5,13 @@ namespace BadgeView.Shared
 {
     public class CircleView : BoxView
     {
-        public static readonly BindableProperty CornerRadiusProperty = BindableProperty.Create(nameof(CornerRadius), typeof(double), typeof(CircleView), 0.0);
+        public static readonly BindableProperty BadgeCornerRadiusProperty = BindableProperty.Create(nameof(BadgeCornerRadius), typeof(double), typeof(CircleView), 0.0);
 
-        public double CornerRadius
+        public double BadgeCornerRadius
         {
-            get { return (double)GetValue(CornerRadiusProperty); }
-            set { SetValue(CornerRadiusProperty, value); }
+            get { return (double)GetValue(BadgeCornerRadiusProperty); }
+            set { SetValue(BadgeCornerRadiusProperty, value); }
         }
 
-       
     }
 }
